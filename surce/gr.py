@@ -1,15 +1,7 @@
 from telethon import TelegramClient, events, utils
 import asyncio
-from telethon.sessions import StringSession
 from telethon.tl.types import InputMessagesFilterEmpty
 import random
-
-API_ID = 22205158
-API_HASH = '4fd96f16abab38cea55da11166fb4184'
-STRING_SESSION = '1BJWap1wBuxpQt0Hf05MCkbtpHWbIj88eik1wJ3AKFKbpxFbIFsL-zXz05My9mpGTeB41pDkwwqMED72xKHlD5DCOAPwS83ajYpmbmQP4JDzUmAC1UWT3f8xAc7DssB82ZTA-5eBFQFl1dquvbQ79_smQ_MrYWzmq_zNcZSmTJ-naetKQfCkmu85bTzZdvu2sGlAowgvQBFDgTZ4Us5aVL9oT3KKG_gdqRdQkClKgHXsOcUIKKL3T_8xoQLec4cy4NaWmlxim2ACLnjwRmIDwuPa0wsZQBdxJU8f39xlC6qVi2MGuJlE9KuaYzSOSLtNiwoHJLekQJjWU9Tqor5K-rmf3RFf0zxk='
-
-client = TelegramClient(StringSession(STRING_SESSION), API_ID, API_HASH)
-
 # Start the client
 async def main():
     try:
@@ -269,11 +261,3 @@ async def handle_endunban(event):
     await endunban(event, user_username)
 
 # Run the client
-with client:
-    try:
-        client.loop.run_until_complete(main())
-        client.run_until_disconnected()
-    except KeyboardInterrupt:
-        print("Client disconnected due to keyboard interrupt.")
-    except Exception as e:
-        print(f"Error occurred: {e}")
