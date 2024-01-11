@@ -10,6 +10,9 @@
       "API_HASH": {
         "description": "Your Telegram API HASH, also acquired from my.telegram.org",
         "required": true
+          "STRING_SESSION": {
+              "description": "your STRING_SESSION"
+              "required": true
       
     },
     "addons": [],
