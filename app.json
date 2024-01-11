@@ -1,8 +1,18 @@
 {
     "name": "Mazin-Deployer",
-    "description": "Deploy the Mazin_surce"
-    "repository": "https://github.com/Mazin47/sd.git",
+    "description": "Deploy the original Mega.nz-Bot",
+    "logo": "https://github.com/Itz-fork/Mega.nz-Bot/blob/nightly/assests/logo.png?raw=true",
+    "keywords": [
+      "Telegram Bot",
+      "Mega.nz",
+      "Cloud Storage",
+      "File Transfer",
+      "Deployment"
+    ],
+    "website": "https://t.me/NexaBotsUpdates",
+    "repository": "https://github.com/Itz-fork/X-Bin-Patch",
     "success_url": "https://t.me/NexaBotsUpdates",
+    "env": {
       "APP_ID": {
         "description": "Your unique Telegram APP ID, obtained from my.telegram.org",
         "required": true
@@ -10,9 +20,11 @@
       "API_HASH": {
         "description": "Your Telegram API HASH, also acquired from my.telegram.org",
         "required": true
-          "STRING_SESSION": {
-              "description": "your STRING_SESSION"
-              "required": true
+      },
+      "STRING_SESSION": {
+        "description": "your STRING_SESSION"
+        "required": true
+      },
       
     },
     "addons": [],
