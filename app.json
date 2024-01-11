@@ -1,0 +1,27 @@
+{
+    "name": "Mazin-Deployer",
+    "description": "Deploy the Mazin_surce"
+    "repository": "https://github.com/Mazin47/sd.git",
+    "success_url": "https://t.me/NexaBotsUpdates",
+    "env": {
+      "APP_ID": {
+        "description": "Your unique Telegram APP ID, obtained from my.telegram.org",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "Your Telegram API HASH, also acquired from my.telegram.org",
+        "required": true
+      },
+      
+    },
+    "addons": [],
+    "buildpacks": [],
+    "formation": {
+      "worker": {
+        "quantity": 1,
+        "size": "eco"
+      }
+    },
+    "stack": "container"
+  }
+  
