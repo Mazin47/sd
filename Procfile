@@ -1,1 +1,1 @@
-worker: python3 -m surce
+bash: python3 -m surce
