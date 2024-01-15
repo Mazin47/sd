@@ -24,18 +24,7 @@
       "STRING_SESSION": {
         "description": "Your STRING_SESSION.",
         "required": true
-      },
-      
-      
-    },
-    "addons": [],
-    "buildpacks": [],
-    "formation": {
-      "worker": {
-        "quantity": 1,
-        "size": "eco"
       }
-    },
-    "stack": "container"
-  }
-  
+      
+      
+    
